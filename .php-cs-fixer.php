@@ -3,6 +3,7 @@
 use PhpCsFixer\Finder;
 
 $rules = [
+    '@PSR2'                   => true,
     'align_multiline_comment' => false,
     'array_indentation'       => true,
     "array_syntax"            => ['syntax' => 'short'],
