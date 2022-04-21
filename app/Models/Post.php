@@ -28,44 +28,18 @@ class Post
 
     public static function all()
     {
-        return collect(File::files(resource_path("posts/")))
-            ->map(fn ($file)     => YamlFrontMatter::parseFile($file))
-            ->map(fn ($document) => new Post(
-                $document->title,
-                $document->excerpt,
-                $document->date,
-                $document->body(),
-                $document->slug
-            ));
-
-        // same as above. Collections is the Laravel way
-
-    // $posts = array_map(function ($file) {
-    //     $document = YamlFrontMatter::parseFile($file);
-
-    //     return new Post(
-    //         $document->title,
-    //         $document->excerpt,
-    //         $document->date,
-    //         $document->body(),
-    //         $document->slug
-    //     );
-    // }, $files);
-
-    // If we want to loop and build an array we probably want to use array_map
-
-    // $posts = [];
-
-    // foreach ($files as $file) {
-    //     $document = YamlFrontMatter::parseFile($file);
-    //     $posts[]  = new Post(
-    //         $document->title,
-    //         $document->excerpt,
-    //         $document->date,
-    //         $document->body(),
-    //         $document->slug
-    //     );
-    // }}
+        return cache()->rememberForever('posts.all', function () {
+            return collect(File::files(resource_path("posts/")))
+                ->map(fn ($file)     => YamlFrontMatter::parseFile($file))
+                ->map(fn ($document) => new Post(
+                    $document->title,
+                    $document->excerpt,
+                    $document->date,
+                    $document->body(),
+                    $document->slug
+                ))
+                ->sortByDesc('date');
+        });
     }
 
     public static function find($slug)
