@@ -10,75 +10,11 @@
 </head>
 
 <body>
+    <?php foreach ($posts as $post):?>
     <article>
-        <h1><a href="/posts/my-first-post">My First Post</a></h1>
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum
-            praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!
-        </p>
+        <?= $post; ?>
     </article>
-    <article>
-        <h1><a href="/posts/my-second-post">My Second Post</a></h1>
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum
-            praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!
-        </p>
-    </article>
-    <article>
-        <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum
-            praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Eum, itaque quibusdam minus facilis ipsum praesentium
-            eius id ipsam molestias modi est ea earum dolorem incidunt deleniti quam! Recusandae, laboriosam illo!
-        </p>
-    </article>
+    <?php endforeach;?>
 </body>
 
 </html>
