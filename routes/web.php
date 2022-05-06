@@ -2,11 +2,16 @@
 
 use App\Models\Category;
 use App\Models\Post;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
+    DB::listen(function ($query) {
+        logger($query->sql, $query->bindings);
+    });
+
     return view('posts', [
-        'posts' => Post::all(),
+        'posts' => Post::with('category')->get(),
     ]);
 });
 
