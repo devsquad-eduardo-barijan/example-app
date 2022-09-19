@@ -5,7 +5,7 @@
 
         <!--Title-->
         <div class="flex justify-between items-center pb-3">
-            <p class="text-2xl font-bold">Are you sure?</p>
+            <p class="text-2xl font-bold">{{ $title }}</p>
             <div class="cursor-pointer z-50">
                 <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                     viewBox="0 0 18 18">
@@ -17,12 +17,13 @@
         </div>
 
         <!-- content -->
-        <p>If you proceed, your account will be deleted entirely</p>
+        {{ $body }}
 
         <!--Footer-->
         <div class="flex justify-end pt-8">
-            <x-button class="bg-transparent text-indigo-500 hover:bg-gray-100 hover:text-indigo-400">Cancel</x-button>
-            <x-button class="modal-close bg-indigo-500 text-white hover:bg-indigo-400">Continue</x-button>
+            {{ $footer }}
+            {{-- <x-button class="bg-transparent text-indigo-500 hover:bg-gray-100 hover:text-indigo-400">Cancel</x-button>
+            <x-button class="modal-close bg-indigo-500 text-white hover:bg-indigo-400">Continue</x-button> --}}
         </div>
 
 
