@@ -21,10 +21,8 @@
 
         <!--Footer-->
         <div class="flex justify-end pt-8">
-            <button
-                class="px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
-            <button
-                class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Continue</button>
+            <x-button class="bg-transparent text-indigo-500 hover:bg-gray-100 hover:text-indigo-400">Cancel</x-button>
+            <x-button class="modal-close bg-indigo-500 text-white hover:bg-indigo-400">Continue</x-button>
         </div>
 
 
