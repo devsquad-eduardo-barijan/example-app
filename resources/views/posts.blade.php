@@ -9,7 +9,7 @@
         @endif
     </main>
 
-    <x-confirmation-modal>
+    <x-confirmation-modal name="user-delete-modal">
         <x-slot name="title">
             Are you sure?
         </x-slot>
@@ -19,7 +19,8 @@
         </x-slot>
 
         <x-slot name="footer">
-            <x-button class="bg-transparent text-indigo-500 hover:bg-gray-100 hover:text-indigo-400">Cancel</x-button>
+            <a href="#"
+                class="px-4 p-3 rounded-lg mr-2 bg-transparent text-indigo-500 hover:bg-gray-100 hover:text-indigo-400">Cancel</a>
             <x-button class="modal-close bg-indigo-500 text-white hover:bg-indigo-400">Continue</x-button>
         </x-slot>
     </x-confirmation-modal>
