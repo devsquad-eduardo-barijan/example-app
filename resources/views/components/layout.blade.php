@@ -24,8 +24,8 @@
                     Subscribe for Updates
                 </a>
 
-                @livewire('delete-user')
             </div>
+            @livewire('delete-user')
         </nav>
 
         {{ $slot }}

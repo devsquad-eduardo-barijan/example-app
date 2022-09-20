@@ -1,8 +1,6 @@
 @props(['name'])
 
-<div x-data="{ show: false }" x-show="show" @hashchange.window="
-    show = (location.hash === '#{{ $name }}')
-">
+<div {{-- x-data="{ show: false }" x-show="show" --}}>
     <!--Overlay-->
     <div style="background-color: rgba(0,0,0,0.5)" class="fixed inset-0">
         <!--Dialog-->
